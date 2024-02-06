@@ -3,4 +3,27 @@
 *::before {
     box-sizing: border-box;
 }
+a, li {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+}
+body {
+    background-color: #000;
+    font-family: '04b08', sans-serif;
+    color:#fff;
+}
 
+$blue: #1e4be4;
+@font-face {
+	font-family: '04b08';
+	src: url('../fonts/04b08.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/04b08.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/04b08.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/04b08.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/04b08.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/04b08.svg#04b08') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@import "header";
+@import "main-content";

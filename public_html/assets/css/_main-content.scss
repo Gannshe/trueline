@@ -1,5 +1,6 @@
 .first-screen {
-    width: 1440px;
+    max-width: 1420px;
+    width: 100%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -12,23 +13,22 @@
         & .title {
             font-size: 50px;
             overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid $blue; /* The typwriter cursor */
             white-space: nowrap;
             margin: 0 auto;
             letter-spacing: .1em; /* Adjust as needed */
             animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .9s step-end infinite;
+              typing 3.5s steps(30, end)
         }
+    }
+    & .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
     }
 }
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: $blue }
   }

@@ -2,6 +2,11 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --index: calc(1vw + 1vh);
 }
 a, li {
     text-decoration: none;

@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trueline</title>
+
+
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="/assets/libs/gsap/gsap.min.js" defer></script>
+    <script src="/assets/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="/assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+ 
 </head>
 <body>
     <header class="header">
@@ -27,12 +31,22 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="first-screen">
-            <div class="block-text">
-                <h1 class="title">посмотри на мир глазами Trueline</h1>
-            </div>
-        </section>
-    </main>
+    <div class="wrapper">
+        <div class="content">
+            <main class="main">
+                    <section class="first-screen">
+                        <div class="block-text">
+                            <h1 class="title">Посмотри на мир глазами Trueline</h1>
+                        </div>
+                        <video loop="" muted="" autoplay=""  class="fullscreen-bg__video">
+                            <source src="/assets/video/bg.mp4" type="video/mp4">
+                        </video>
+                    </section>
+                </main>
+
+
+        </div>
+    </div>
+   
 </body>
 </html>

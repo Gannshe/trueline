@@ -4,14 +4,15 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10S;
+    z-index: 105;
 
     &__inner {
-        padding: 15px 0 0 0;
+        padding: 15px 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         margin: 0 auto;
 
         & .logo {
@@ -34,6 +35,7 @@
             &__inner {
                 display: flex;
                 gap: 30px;
+                font-weight: bold;
 
                 & .menu-item a {
                     &:hover {

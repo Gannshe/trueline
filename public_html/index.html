@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trueline</title>
 
-
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="/assets/libs/gsap/gsap.min.js" defer></script>
+    <!-- <script src="/assets/libs/gsap/gsap.min.js" defer></script>
     <script src="/assets/libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="/assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="/assets/libs/gsap/ScrollTrigger.min.js" defer></script> -->
     <script src="assets/js/app.js" defer></script>
- 
+
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner">
             <div class="logo">
-                <img src="assets\img\logo.png" alt="" class="logo-img">
-                <img src="assets\img\icon-rec.png" alt="" class="icon-rec">
+                <img src="assets\img\logo.png" alt class="logo-img">
+                <img src="assets\img\icon-rec.png" alt class="icon-rec">
             </div>
             <div class="menu">
                 <ul class="menu__inner">
-                    <li class="menu-item"><a href="#" class="menu-link">О НАС</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">О
+                            НАС</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">ПРОЕКТЫ</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">ССЫЛКА НА СКАЧИВАНИЕ</a></li>
                 </ul>
@@ -31,22 +33,27 @@
         </div>
     </header>
 
+    <div class="bg-video">
+        <video loop muted autoplay class="fullscreen-bg__video">
+            <source src="/assets/video/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main class="main">
+        <section class="first-screen">
+            <div class="block-text">
+                <h1 class="title">Посмотри<br>на мир глазами <br>
+                    Trueline</h1>
+            </div>
+
+        </section>
+    </main>
+    <div class="content-empty" style="height: 2000px;"></div>
     <div class="wrapper">
         <div class="content">
-            <main class="main">
-                    <section class="first-screen">
-                        <div class="block-text">
-                            <h1 class="title">Посмотри на мир глазами Trueline</h1>
-                        </div>
-                        <video loop="" muted="" autoplay=""  class="fullscreen-bg__video">
-                            <source src="/assets/video/bg.mp4" type="video/mp4">
-                        </video>
-                    </section>
-                </main>
-
-
         </div>
     </div>
-   
+
 </body>
+
 </html>

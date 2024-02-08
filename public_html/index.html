@@ -24,35 +24,98 @@
             </div>
             <div class="menu">
                 <ul class="menu__inner">
-                    <li class="menu-item"><a href="#" class="menu-link">О
+                    <li class="menu-item"><a href="#performance" class="menu-link">О
                             НАС</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">ПРОЕКТЫ</a></li>
+                    <li class="menu-item"><a href="#about" class="menu-link">ПРОЕКТЫ</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">ССЫЛКА НА СКАЧИВАНИЕ</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <div class="bg-video">
-        <video loop muted autoplay class="fullscreen-bg__video">
-            <source src="/assets/video/bg.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <main class="main">
-        <section class="first-screen">
-            <div class="block-text">
-                <h1 class="title">Посмотри<br>на мир глазами <br>
-                    Trueline</h1>
-            </div>
-
-        </section>
-    </main>
-    <div class="content-empty" style="height: 2000px;"></div>
     <div class="wrapper">
         <div class="content">
+            <div data-speed=".7" class="bg-video">
+                <video loop muted autoplay class="fullscreen-bg__video">
+                    <source src="/assets/video/bg.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+            <section data-speed=".9" class="hero-section">
+                <h1 class="title">Посмотри<br>на мир глазами <br>
+                    Trueline</h1>
+            </section>
+            <div class="null-block"></div>
+
+            <section data-speed=".7" class="performance">
+                <div class="performance-title">
+                    Trueline – мобильное приложение для публикации авторского видеконтента. Концепция приложения - <p>неизменная реальность.</p>
+                </div>
+            </section>
+            <div id='performance' data-speed=".7" class="performance-info">
+                <div class="performance-info__title">Преимущества</div>
+                <div class="performance-list">
+                    <div class="performance-item">
+                        <div class="performance-item-num">1</div>
+                        Прозрачная съемка
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">2</div>
+                        Точное время и геолокация
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">3</div>
+                        Монетезация с помощью Функции «Заказы»
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">4</div>
+                        Объединение видео в единый ролик
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">5</div>
+                        Гарантия подлинности видео
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">6</div>
+                        Переключение камеры во время съемки
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">7</div>
+                        Публикация контента происходит быстро
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-item-num">8</div>
+                        Легкая регистрация
+                    </div>
+                </div>
+            </div>
+            <section id="about" data-speed=".6" class="about">
+                <div class="about-title">НАШИ ПРОЕКТЫ</div>
+                <div class="about-items">
+
+                    <div class="about-items__project">
+                        <img src="/assets/img/love.png" alt="" class="about-items__project-img">
+                        <div class="about-items__project-title"> Трумэн</div>
+
+                    </div>
+                    <div class="about-items__project">
+                        <img src="/assets/img/journalist.png" alt="" class="about-items__project-img">
+                        <div class="about-items__project-title"> Честный, но продажный журналист</div>
+                    </div>
+                </div>
+
+                <div class="about-trueman">
+                    <img src="" alt="" class="about-trueman-img">
+                    <div class="about-trueman-info">
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="content-empty" style="height: 2000px;"></div>
         </div>
     </div>
+
 
 </body>
 

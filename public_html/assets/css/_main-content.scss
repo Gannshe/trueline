@@ -1,40 +1,32 @@
-.main {
-  height: 200vh;
-  overflow: hidden !important;
-}
-
-.first-screen {
+.hero-section {
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
     align-items: center;
-    overflow-y: hidden;
-
-    & .block-text {
-        width: 100%;
-        margin: auto;
+    position: absolute;
+    top: 0;
 
         & .title {
           text-align: left;
             font-size: 70px;
             overflow: hidden; /* Ensures the content is not revealed until the animation */
             white-space: nowrap;
-            margin: 0 auto;
+            padding: 0 7vw;
             letter-spacing: .1em; /* Adjust as needed */
         }
-    }
+  
 }
 .bg-video {
-  position: absolute;
+  position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
 }
 .fullscreen-bg__video {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,7 +36,128 @@
   scale: 1.25;
   will-change: scale;
 }
-  .video-small {
-    opacity: 0 !important;
+.null-block {
+  padding: 600px 0 0 0;
+}
+.performance {
+  padding: 300px 0 300px;
 
+  &-title {
+    padding: 0 7vw;
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1.2;
+    & p {
+      color: $blue;
+    }
   }
+  &-info {
+    padding: 300px 7vw;
+
+    &__title {
+      text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $blue;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 30px;
+    max-width: 1420px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &-item {
+    text-align: center;
+    font-size: 18px;
+    padding: 50px 20px;
+    width: 23%;
+    border: 2px solid rgba(30, 75, 228, 0.57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+
+&-num {
+  font-size: 110px;
+    position: absolute;
+    z-index: -1;
+    color: $blue;
+    opacity: .3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    
+  }
+}  
+.about {
+  padding: 100px 7vw;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%);
+
+  &-title {
+    text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 50px;
+  }
+  &-items {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+    &__project {
+      width: 30%;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.49);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(9.8px);
+      -webkit-backdrop-filter: blur(9.8px);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+
+    &-img {
+      height: 60%;
+    margin-bottom: 15px;
+    }
+    &-title {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 0 10px;
+      height: 40px;
+    }
+    }
+  }
+}
+.about-trueman {
+  background: rgba(0, 0, 0, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+border-radius: 15px;
+margin: 0 auto;
+max-width: 1420px;
+    width: 100%;
+    height: 600px;
+}

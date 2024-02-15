@@ -220,8 +220,8 @@ body {
 .about {
   padding: 100px 7vw;
   background: rgb(0, 0, 0);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(51%, rgb(9, 9, 121)), to(rgb(0, 212, 255)));
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(9, 9, 121) 51%, rgb(0, 212, 255) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(30, 75, 228)));
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(30, 75, 228) 100%);
 }
 .about-title {
   text-align: center;
@@ -244,7 +244,7 @@ body {
   width: 30%;
   height: 200px;
   background: rgba(0, 0, 0, 0.49);
-  border-radius: 16px;
+  border-radius: 30px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
@@ -283,15 +283,36 @@ body {
 
 .about-trueman {
   background: rgba(0, 0, 0, 0.49);
-  border-radius: 16px;
+  border-radius: 30px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 15px;
   margin: 0 auto;
-  max-width: 1420px;
+  max-width: 1220px;
   width: 100%;
-  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  padding: 5vw;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-trueman-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-trueman-info__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-trueman-img {
+  height: 350px;
 }

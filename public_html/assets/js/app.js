@@ -34,13 +34,13 @@ gsap.fromTo('.performance', {x: -150, opacity: 0}, {
         end: 'center'
     }
 })
-gsap.fromTo('.performance-info', {x: 300, opacity: 0}, {
-    x: 0,
-    opacity:1,
-    scrollTrigger: {
-        trigger: '.performance-info',
-        scrub: true,
-        start: 'top',
-        end: 'center'
-    }
-})
+// gsap.fromTo('.performance-info', {x: 300, opacity: 0}, {
+//     x: 0,
+//     opacity:1,
+//     scrollTrigger: {
+//         trigger: '.performance-info',
+//         scrub: true,
+//         start: 'top',
+//         end: 'center'
+//     }
+// })
